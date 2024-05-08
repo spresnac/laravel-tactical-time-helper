@@ -1,0 +1,60 @@
+{
+    "name": "spresnac/laravel-tactical-time-helper",
+    "license": "MIT",
+    "description": "Need some helper regarding tactical times in laravel? I needed some helper for handling incoming tactime and sending tactime strings from my project, so here it is to help you.",
+    "keywords": ["php", "laravel", "tactical", "time", "helper"],
+    "type": "library",
+    "require": {
+      "php": "^8.3",
+      "nesbot/carbon": "^2|^3",
+      "illuminate/contracts": "^11",
+      "illuminate/translation": "^11"
+    },
+    "require-dev": {
+      "phpunit/phpunit": "^11",
+      "illuminate/validation": "^11",
+      "illuminate/support": "^11"
+    },
+    "funding": [
+      {
+        "type": "paypal",
+        "url": "https://www.paypal.me/paladin"
+      },
+      {
+        "type": "github",
+        "url": "https://github.com/sponsors/spresnac"
+      }
+    ],
+    "autoload": {
+      "psr-4": {
+        "spresnac\\": "src/spresnac/"
+      }
+    },
+    "autoload-dev": {
+      "psr-4": {
+        "spresnac\\Helper\\tests\\": "tests/spresnac/"
+      }
+    },
+    "minimum-stability": "stable",
+    "authors": [
+      {
+        "name": "Sascha Presnac",
+        "email": "sascha@presnac.de"
+      }
+    ],
+    "homepage": "https://github.com/spresnac/laravel-tactical-time-helper",
+    "support": {
+      "issues": "https://github.com/spresnac/laravel-tactical-time-helper/issues",
+      "source": "https://github.com/spresnac/laravel-tactical-time-helper"
+    },
+    "extra": {
+      "laravel": {
+        "providers": [
+
+        ]
+      }
+    },
+    "scripts": {
+      "test-ci": "phpunit --coverage-clover=coverage.xml"
+    }
+}
